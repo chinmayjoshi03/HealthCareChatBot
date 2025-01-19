@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f8f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  height: 80vh;
+  background-color: white;
+}
+
+.chat-window {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: center; 
+  align-items: start; 
+  color: rgba(8, 233, 27, 0.849);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 75%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end; /* User messages on the right side */
+}
+
+.message.bot {
+  background-color: #f6bbb1;
+  align-self: flex-start; /* Bot responses on the left side */
+}
+
+.input-section {
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  justify-content: space-between;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .chat-container {
+    padding: 10px;
+  }
+}
