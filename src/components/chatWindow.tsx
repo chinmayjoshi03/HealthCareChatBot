@@ -8,12 +8,12 @@ interface ChatWindowProps {
 const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
   return (
     <div className="chat-window">
-      {/* Header */}
+      
       <div className="chat-header">
         <h2>Healthcare Chatbot</h2>
       </div>
 
-      {/* Messages */}
+     
       {messages.map((msg, index) => (
         <div
           key={index}

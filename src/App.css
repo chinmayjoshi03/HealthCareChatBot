@@ -61,12 +61,12 @@ body {
 
 .message.user {
   background-color: #dcf8c6;
-  align-self: flex-end; /* User messages on the right side */
+  align-self: flex-end; 
 }
 
 .message.bot {
   background-color: #f6bbb1;
-  align-self: flex-start; /* Bot responses on the left side */
+  align-self: flex-start; 
 }
 
 .input-section {
